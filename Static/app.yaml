@@ -21,6 +21,8 @@ handlers:
 - url: /
   static_files: www/index.html
   upload: www/index.html
+  http_headers:
+    Access-Control-Allow-Origin: https://staples.ca
 
 - url: /(.*)
   static_files: www/\1
